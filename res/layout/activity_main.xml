@@ -83,7 +83,7 @@
             android:paddingTop="60dp" >
 
             <TextView
-                android:id="@+id/5"
+                android:id="@+id/txt5"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:text="This is tab 5" />
