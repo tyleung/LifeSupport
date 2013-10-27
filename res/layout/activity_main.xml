@@ -26,7 +26,8 @@
                 android:id="@+id/txt1"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="This is tab1" />
+                android:text="@string/LS" />
+
         </LinearLayout>
 
         <!-- Events tab -->
@@ -41,7 +42,7 @@
                 android:id="@+id/txt2"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="This is tab 2" />
+                android:text="@string/event" />
         </LinearLayout>
 
         <!-- Contacts tab -->
@@ -56,7 +57,7 @@
                 android:id="@+id/txt3"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="This is tab 3" />
+                android:text="@string/contact" />
         </LinearLayout>
         
         <!-- Prayer tab -->
@@ -71,7 +72,7 @@
                 android:id="@+id/txt4"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="This is tab 4" />
+                android:text="@string/prayer" />
         </LinearLayout>
         
         <!-- Verse tab -->
@@ -81,12 +82,13 @@
             android:layout_height="fill_parent"
             android:orientation="vertical"
             android:paddingTop="60dp" >
+            
 
             <TextView
                 android:id="@+id/txt5"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
-                android:text="This is tab 5" />
+                android:text="@string/verse" />
         </LinearLayout>
     </FrameLayout>
 
