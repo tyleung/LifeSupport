@@ -5,11 +5,11 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-	<string name="LS">What is LS? When is it?</string>
+    <string name="LS">What is LS? When is it?</string>
     <string name="verse">[encouraging verse]</string>
     <string name="contact">Who can i talk to? how can i get there? and where is LS? </string>
     <string name="prayer">Prayer bulletin</string>
     <string name="event">Events that are happening and schedule</string>
-
+    <string name="title_activity_contact">Contact</string>
 
 </resources>

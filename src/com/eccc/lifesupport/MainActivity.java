@@ -1,12 +1,22 @@
 package com.eccc.lifesupport;
 
+import java.io.IOException;
+
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 //import android.view.Menu;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 
 public class MainActivity extends Activity {
+	
+	private ImageButton imageButton;
+	private MediaPlayer mediaPlayer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +50,25 @@ public class MainActivity extends Activity {
         tabHost.addTab(spec3);
         tabHost.addTab(spec4);
         tabHost.addTab(spec5);
+        
+        mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.iu);
+        mediaPlayer.setLooping(true);
+        imageButton = (ImageButton) findViewById(R.id.imageButton1);
+        imageButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				if (mediaPlayer.isPlaying()) {
+					mediaPlayer.pause();
+				} else {
+					mediaPlayer.start();
+				}
+			}
+		});
+        
+        
 	}
+	
 
 /*	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
