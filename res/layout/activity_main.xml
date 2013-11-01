@@ -12,13 +12,12 @@
     <FrameLayout
         android:id="@android:id/tabcontent"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="match_parent" >
 
         <!-- Intro tab -->
-
         <LinearLayout
             android:id="@+id/tab1"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="60dp" >
@@ -32,6 +31,7 @@
         </LinearLayout>
 
         <!-- Events tab -->
+
         <LinearLayout
             android:id="@+id/tab2"
             android:layout_width="fill_parent"
@@ -39,14 +39,36 @@
             android:orientation="vertical"
             android:paddingTop="60dp" >
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
             <TextView
-                android:id="@+id/txt2"
+                android:id="@+id/txt2.1"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:text="@string/event" />
+            <TextView
+                android:id="@+id/txt2.2"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/event" />
+            <TextView
+                android:id="@+id/txt2.3"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/event" />
+            <TextView
+                android:id="@+id/txt2.4"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/event" />
+           
         </LinearLayout>
 
-        <!-- Contacts/Location tab -->
+        <!-- Contacts tab -->
         <LinearLayout
             android:id="@+id/tab3"
             android:layout_width="fill_parent"
@@ -59,7 +81,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:text="@string/contact" />
-            
+
             <ImageButton 
                 android:id="@+id/imageButton1"
                 android:layout_width="wrap_content"
@@ -67,9 +89,11 @@
                 android:src="@drawable/iucover"
                 android:scaleType="centerInside" />
             
+
         </LinearLayout>
         
         <!-- Prayer tab -->
+
         <LinearLayout
             android:id="@+id/tab4"
             android:layout_width="fill_parent"
@@ -77,8 +101,24 @@
             android:orientation="vertical"
             android:paddingTop="60dp" >
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
             <TextView
-                android:id="@+id/txt4"
+                android:id="@+id/txt4.1"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/prayer" />
+            <TextView
+                android:id="@+id/txt4.2"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:text="@string/prayer" />
+
+            <TextView
+                android:id="@+id/txt4.3"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:text="@string/prayer" />
